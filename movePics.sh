@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for search in $(find ~/Pictures/ -name *.png)
+for search in $(find ~/Documents/ -name *.png)
 do
-	$(cp search ~/Documents/)
+	$(mv $search ~/Pictures/)
 done
